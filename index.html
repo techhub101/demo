@@ -1,87 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bright Future Academy | Mulund</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bright Future Academy - Mulund</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .nav-link-active { color: #1e3a8a; border-bottom: 2px solid #1e3a8a; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 100; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-900 font-sans">
 
-<!-- NAVBAR -->
-<nav class="bg-white shadow-sm">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-semibold text-blue-900">Bright Future Academy</h1>
-    <div class="space-x-6 text-sm">
-      <a href="index.html" class="text-blue-900 font-medium">Home</a>
-      <a href="about.html" class="hover:text-blue-700">About</a>
-      <a href="courses.html" class="hover:text-blue-700">Courses</a>
-      <a href="reviews.html" class="hover:text-blue-700">Reviews</a>
-      <a href="contact.html" class="hover:text-blue-700">Contact</a>
-    </div>
-  </div>
-</nav>
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900">Bright Future Academy</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="nav-link-active hover:text-blue-900 transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-900 transition">About</a>
+                <a href="courses.html" class="text-gray-600 hover:text-blue-900 transition">Courses</a>
+                <a href="reviews.html" class="text-gray-600 hover:text-blue-900 transition">Reviews</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-900 transition">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-blue-900 text-white px-5 py-2 rounded hover:bg-blue-800 transition">Book Free Demo</a>
+        </nav>
+    </header>
 
-<!-- HERO -->
-<section class="bg-blue-900 text-white py-20 text-center">
-  <h2 class="text-4xl font-bold mb-4">Shaping Academic Excellence in Mulund</h2>
-  <p class="mb-6">SSC | HSC Science | JEE & NEET Foundation</p>
-  <a href="contact.html" class="bg-white text-blue-900 px-6 py-3 rounded-md hover:bg-gray-200 transition">Book Free Demo</a>
-</section>
+    <section class="bg-blue-900 text-white py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Empowering Students in Mulund to Achieve Excellence</h1>
+            <p class="text-xl mb-10 text-blue-100 max-w-2xl mx-auto">Providing quality education and personalized mentorship for SSC, HSC, and Competitive Exams.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="courses.html" class="bg-white text-blue-900 px-8 py-3 rounded font-bold hover:bg-gray-100 transition">Explore Courses</a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-blue-900 transition">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
-<!-- ABOUT PREVIEW -->
-<section class="py-16 max-w-6xl mx-auto px-6 text-center">
-  <h3 class="text-2xl font-semibold mb-4">About Our Institute</h3>
-  <p class="text-gray-600">
-    Since 2012, Bright Future Academy has been helping students build strong fundamentals,
-    improve confidence, and achieve consistent academic results.
-  </p>
-</section>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-blue-900">Why Choose Us</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-900 mb-4 text-3xl font-bold">01</div>
+                    <h3 class="text-xl font-bold mb-3">Expert Faculty</h3>
+                    <p class="text-gray-600">Experienced educators dedicated to simplifying complex concepts for every student.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-900 mb-4 text-3xl font-bold">02</div>
+                    <h3 class="text-xl font-bold mb-3">Personalized Attention</h3>
+                    <p class="text-gray-600">Small batch sizes ensuring that no student is left behind in their learning journey.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-900 mb-4 text-3xl font-bold">03</div>
+                    <h3 class="text-xl font-bold mb-3">Structured Testing</h3>
+                    <p class="text-gray-600">Regular assessments and performance tracking to build exam confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- COURSES -->
-<section class="bg-white py-16">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
-    <div class="p-6 shadow-sm rounded-lg hover:shadow-md transition">
-      <h4 class="font-semibold text-lg mb-2">SSC (8th–10th)</h4>
-      <p class="text-sm text-gray-600">Strong foundation with board-focused preparation.</p>
-    </div>
-    <div class="p-6 shadow-sm rounded-lg hover:shadow-md transition">
-      <h4 class="font-semibold text-lg mb-2">HSC Science</h4>
-      <p class="text-sm text-gray-600">Physics, Chemistry, Maths & Biology expert guidance.</p>
-    </div>
-    <div class="p-6 shadow-sm rounded-lg hover:shadow-md transition">
-      <h4 class="font-semibold text-lg mb-2">JEE / NEET Foundation</h4>
-      <p class="text-sm text-gray-600">Concept clarity & competitive exam strategy.</p>
-    </div>
-  </div>
-</section>
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-3xl font-bold text-blue-900">Our Core Programs</h2>
+                <a href="courses.html" class="text-blue-700 font-semibold hover:underline">View All Courses &rarr;</a>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded overflow-hidden shadow">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">SSC (8th - 10th)</h3>
+                        <p class="text-gray-600 mb-4">State board curriculum with focus on conceptual clarity and board prep.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden shadow">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">HSC Science</h3>
+                        <div class="p-6">
+                        <p class="text-gray-600 mb-4">In-depth coaching for Physics, Chemistry, Biology, and Mathematics.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden shadow">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">JEE / NEET Prep</h3>
+                        <p class="text-gray-600 mb-4">Foundation and advanced coaching for medical and engineering entrance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-300 pt-12 pb-6 mt-10">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
-    <div>
-      <h3 class="text-white text-xl font-semibold mb-4">Bright Future Academy</h3>
-      <p class="text-sm">Mulund East, Mumbai – 400081</p>
-    </div>
-    <div>
-      <h4 class="text-white font-semibold mb-4">Quick Links</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="text-white font-semibold mb-4">Contact</h4>
-      <p class="text-sm">+91 98765 43210</p>
-      <p class="text-sm mt-2">info@brightfutureacademy.in</p>
-    </div>
-  </div>
-  <div class="text-center text-sm text-gray-500 mt-8">
-    © 2026 Bright Future Academy. All rights reserved.
-  </div>
-</footer>
+    <section class="py-16 bg-blue-900 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Admissions Open for 2026-27</h2>
+            <p class="text-lg mb-8 opacity-90">Secure your child's future with the right guidance at the right time.</p>
+            <a href="contact.html" class="bg-white text-blue-900 px-10 py-4 rounded font-bold hover:bg-gray-100 transition inline-block">Inquire Now</a>
+        </div>
+    </section>
+
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <h4 class="text-white text-xl font-bold mb-4">Bright Future Academy</h4>
+                <p class="mb-4 max-w-sm">Leading coaching institute in Mulund, Mumbai dedicated to academic excellence and professional growth.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="courses.html" class="hover:text-white transition">Courses</a></li>
+                    <li><a href="reviews.html" class="hover:text-white transition">Reviews</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact Info</h4>
+                <p>Mulund East, Mumbai 400081</p>
+                <p>Phone: +91 98XXX XXXXX</p>
+                <p>Email: info@brightfuture.com</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2026 Bright Future Academy. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
