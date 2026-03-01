@@ -1,12 +1,85 @@
-<section class="py-16 max-w-5xl mx-auto px-6">
-  <h2 class="text-3xl font-semibold mb-6 text-center">About Us</h2>
-  <p class="text-gray-600 mb-4">
-    Bright Future Academy was established with a vision to provide quality education 
-    to students in Mulund. We focus on strong fundamentals, regular testing, 
-    and personal attention.
-  </p>
-  <p class="text-gray-600">
-    Our experienced faculty ensures students build confidence and achieve 
-    consistent academic success.
-  </p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Bright Future Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>.nav-link-active { color: #1e3a8a; border-bottom: 2px solid #1e3a8a; }</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900">Bright Future Academy</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-blue-900 transition">Home</a>
+                <a href="about.html" class="nav-link-active hover:text-blue-900 transition">About</a>
+                <a href="courses.html" class="text-gray-600 hover:text-blue-900 transition">Courses</a>
+                <a href="reviews.html" class="text-gray-600 hover:text-blue-900 transition">Reviews</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-900 transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h1 class="text-4xl font-bold text-blue-900 mb-6">About Our Institute</h1>
+                <p class="text-lg text-gray-600">Founded with a vision to provide quality education in Mulund, Bright Future Academy has been a beacon of academic success for over a decade.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-20 items-center">
+                <div class="bg-gray-200 h-80 rounded-lg"></div>
+                <div>
+                    <h2 class="text-2xl font-bold text-blue-900 mb-4">A Message from the Director</h2>
+                    <p class="text-gray-600 mb-4 italic">"Education is not just about marks; it's about building a foundation for life. We ensure every student who walks through our doors leaves with confidence and clarity."</p>
+                    <p class="font-bold">- Prof. R. Sharma</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 text-center">
+                <div class="bg-blue-900 text-white p-10 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="opacity-90">To provide accessible, high-quality education that empowers students to excel in their chosen fields and become responsible citizens.</p>
+                </div>
+                <div class="bg-blue-50 border-2 border-blue-900 p-10 rounded-lg">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-700">To be the most trusted educational partner for parents and students in Mumbai, known for academic integrity and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Why Parents Trust Us</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded shadow-sm text-center">
+                    <h4 class="font-bold text-blue-900 mb-2">Transparency</h4>
+                    <p class="text-sm text-gray-600">Regular PTMs and progress reports sent monthly.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm text-center">
+                    <h4 class="font-bold text-blue-900 mb-2">Safety</h4>
+                    <p class="text-sm text-gray-600">Secure campus environment with CCTV monitoring.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm text-center">
+                    <h4 class="font-bold text-blue-900 mb-2">Consistency</h4>
+                    <p class="text-sm text-gray-600">Proven track record of results year after year.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm text-center">
+                    <h4 class="font-bold text-blue-900 mb-2">Ethics</h4>
+                    <p class="text-sm text-gray-600">Honest guidance and no false marketing claims.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 Bright Future Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
